@@ -43,7 +43,7 @@ module.exports = {
 
     if(!app.options['ember-prism']) {
       app.options['ember-prism'] = {
-        // theme: 'okaidia',
+        theme: 'not-a-real-theme',
 
         components: [
           'apacheconf',
