@@ -60,8 +60,8 @@ export function initialize(/* application */) {
 
         let autoExecuteLanguages = fieldGuideConfig.autoExecuteLanguages || ['html', 'handlebars', 'hbs'];
 
-        let selfExecutingBlock = `<div class="self-executing-code-block not-prose">
-  <div class="example">
+        let selfExecutingBlock = `<div class="self-executing-code-block">
+  <div class="example not-prose">
     ${inputCodeblock}
   </div>
   ${preBlock}
