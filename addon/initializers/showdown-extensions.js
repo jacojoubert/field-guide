@@ -13,7 +13,7 @@ export function initialize(/* application */) {
       type: 'lang',
       regex: /\^\^ (.+)/g,
       replace: function (match, content) {
-        return `<p class="-mt-4 text-lg font-light text-slate-700 dark:text-slate-400">${content}</p>`;
+        return `<p class="-mt-4 text-lg font-light text-slate-500 dark:text-slate-400">${content}</p>`;
       }
      };
     return [intro];
