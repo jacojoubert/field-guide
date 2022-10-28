@@ -67,7 +67,7 @@ export function initialize(/* application */) {
         // escape { and } for the code sample
         highlightedCodeBlock = highlightedCodeBlock.replace(/{/g, '&#123;').replace(/}/g, '&#125;')
 
-        let preBlock = `<pre class="language-${language}"><code ${language ? `class="${language} language-${language}"` : ''}>${highlightedCodeBlock}</code></pre>`;
+        let preBlock = `<pre class="prism-code language-${language}"><code>${highlightedCodeBlock}</code></pre>`;
 
         let autoExecuteLanguages = fieldGuideConfig.autoExecuteLanguages || ['html', 'handlebars', 'hbs'];
 
