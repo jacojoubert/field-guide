@@ -4,6 +4,7 @@ import config from 'ember-get-config';
 import { inject as service } from '@ember/service';
 
 import normalisePath from '../utils/normalise-path';
+import getParentToc from '../utils/get-parent-toc';
 
 export default class ShowRoute extends Route {
   @service router;
@@ -18,6 +19,7 @@ export default class ShowRoute extends Route {
 
     // check if there is a path/index in the TOC
     const toc = this.modelFor('application');
+    const parent = getParentToc(toc, path);
 
     path = normalisePath(path, toc);
 
@@ -27,6 +29,7 @@ export default class ShowRoute extends Route {
         return {
           id: res.data.id,
           ...res.data.attributes,
+          parent,
         };
       });
   }
