@@ -8,6 +8,17 @@ import config from 'ember-get-config';
 let fieldGuideConfig = config['field-guide'] || {};
 
 export function initialize(/* application */) {
+  showdown.extension('intro', function () {
+    const intro = {
+      type: 'lang',
+      regex: /\^\^ (.+)/g,
+      replace: function (match, content) {
+        return `<p class="-mt-4 text-lg font-light text-slate-700 dark:text-slate-400">${content}</p>`;
+      }
+     };
+    return [intro];
+  });
+
 
   showdown.subParser('githubCodeBlocks', function (text, options, globals) {
     'use strict';
