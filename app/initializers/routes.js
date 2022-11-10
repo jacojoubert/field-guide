@@ -2,11 +2,11 @@
 import Router from '../router';
 
 export function initialize() {
-  Router.map(function() {
-    this.route('show', { path: '*path' });
+  Router.map(function () {
+    this.route('show', { path: '/docs/*path' });
   });
 }
 
 export default {
-  initialize
+  initialize,
 };
