@@ -30,7 +30,7 @@
     "ember-compatibility-test": "ember try:each"
   },
   "dependencies": {
-    "@embroider/util": "^0.43.5",
+    "@embroider/util": "^1.9.0",
     "@glimmer/component": "^1.1.2",
     "broccoli-funnel": "^3.0.8",
     "broccoli-merge-trees": "^4.2.0",
@@ -53,13 +53,13 @@
   "devDependencies": {
     "@ember/optional-features": "^2.0.0",
     "@ember/test-helpers": "^2.4.2",
-    "@embroider/test-setup": "^0.43.5",
+    "@embroider/test-setup": "^2.0.2",
     "@glimmer/tracking": "^1.0.4",
     "auto-changelog": "github:mansona/auto-changelog#epic",
     "babel-eslint": "^10.1.0",
     "broccoli-asset-rev": "^3.0.0",
-    "ember-cli": "~3.28.0",
-    "ember-cli-dependency-checker": "^3.2.0",
+    "ember-cli": "~4.9.2",
+    "ember-cli-dependency-checker": "^3.3.1",
     "ember-cli-fastboot": "^3.2.0-beta.4",
     "ember-cli-inject-live-reload": "^2.1.0",
     "ember-cli-sri": "^2.1.1",
